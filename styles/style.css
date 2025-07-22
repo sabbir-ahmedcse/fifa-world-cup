@@ -102,6 +102,8 @@ img {
 
 }
 
+
+
 /* main section style */
 .upcoming-matches {
     display: flex;
@@ -203,4 +205,41 @@ p {
     filter: grayscale(100%);
     width: 100px;
 
+}
+
+
+
+/* responsive with mobail  device*/
+
+@media screen and (max-width:576px) {
+   .banner {
+    flex-direction: column;
+   }
+   .banner-left{
+    margin-bottom: 20px;
+   }
+
+   .banner-left h2 {
+
+    font-size: 45px;
+   }
+
+   .upcoming-matches{
+    flex-direction: column;
+   }
+   .upcoming-matches-left{
+    background-color: rgb(195, 215, 233);
+   }
+
+   .upcoming-matches-right{
+    grid-template-columns: repeat(1, 1fr);
+   }
+
+   .footer-sponser{
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 30px;
+   }
+
+
+    
 }
