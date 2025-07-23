@@ -190,14 +190,16 @@ p {
 .footer-content {
     text-align: center;
     padding: 60px;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 
 }
 
 .footer-sponser {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 20px;
+   display: flex;
+   justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+    padding-bottom: 40px;
     
 
 }
@@ -205,7 +207,7 @@ p {
 .footer-sponser img {
     filter: grayscale(100%);
     width: 100px;
-    margin-left: 70px;
+   
 
 }
 
@@ -214,6 +216,10 @@ p {
 /* responsive with mobail  device*/
 
 @media screen and (max-width:576px) {
+
+    .container{
+        margin: 0 10px;
+    }
     .banner {
         flex-direction: column;
     }
@@ -239,13 +245,21 @@ p {
         grid-template-columns: repeat(1, 1fr);
     }
 
+ 
+
     .footer-sponser {
-        grid-template-columns: repeat(3, 1fr);
-        margin: 0 20px 0 20px;
+       flex-direction: column;
+        
         justify-content: center;
+        align-items: center;
+       
     }
 
+   .footer-content {
+   
+    margin-bottom: 0px;
 
+}
 
 }
 
@@ -286,9 +300,8 @@ p {
     }
 
     .footer-sponser {
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
-        margin-left: 30px;
+       flex-wrap: wrap;
+        
     }
 
 }
